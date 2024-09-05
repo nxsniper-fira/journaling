@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journaling Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Journaling App</h1>
+        <form id="journal-form">
+            <label for="date">📅 Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="position">Position:</label>
+            <select id="position" required>
+                <option value="short">Short</option>
+                <option value="long">Long</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option  value="tp">TP</option>
+                <option  value="sl">SL</option>
+            </select>
+
+            <label for="file">Attach File:</label>
+            <input type="file" id="file">
+
+            <label for="entry">Journal:</label>
+            <textarea id="entry" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
